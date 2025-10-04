@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Flow Visualizer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+      <h1>Code Flow Visualizer</h1>
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Code input card -->
+    <div class="card">
+      <h2>Enter Python Code</h2>
+      <textarea id="codeInput" placeholder="// Write Python code here..."></textarea>
+      <button id="generateBtn">Generate Diagram</button>
+    </div>
+
+    <!-- Output card -->
+    <div id="outputCard" class="card">
+      <h2>Generated Diagram</h2>
+      <div id="output">
+        <img id="diagram" alt="Generated Diagram" style="display:none;"/>
+        <button id="downloadBtn" style="display:none;">⬇️ Download PNG</button>
+        <pre id="errorOutput"></pre>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
